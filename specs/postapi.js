@@ -1,3 +1,6 @@
+import {
+    htmlReport
+} from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 import { check } from 'k6';
 import http from 'k6/http';
 import { URL } from './url.js';
@@ -72,9 +75,11 @@ const  getParams = {
         'is status 202':(r)=> r.status = 202,
         'is Id removes':(r)=>r.status = "removed",
     })
-    console.log('delete',resdel.json());
+    console.log('delete',resdel.json());    
+}
 
-    
-
-
+export function handleSummary(data) {
+    return {
+        "summary.html": htmlReport(data),
+    };
 }
