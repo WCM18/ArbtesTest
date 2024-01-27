@@ -1,5 +1,5 @@
  Jag  följa dessa steg För att lösa uppgiften:
- 
+
 1 Installera K6 genom Node Package Manager (npm).
 
 2.Importera http-modulen för att utföra alla CRUD-operationer på API:et.
@@ -10,7 +10,7 @@
 
 5. Importera htmlReport från "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js" för att skriva ut testrapporten.
 
-6. Skapa och exportera en konfigurationsobjekt med namnet Options för ett prestandatestverktyg. Det specificeras att testet ska simulera 1 virtuell användare och köras i 1 sekund.
+6. Skapa och exportera en konfigurationsobjekt med namnet Options för ett prestandatestverktyg. Det specificeras att testet ska simulera 10 virtuell användare och köras i 30 sekund.
 
 7. Skicka en HTTP POST-förfrågan till https://r7dk2.wiremockapi.cloud/arbetssokande med en JSON-payload som innehåller namn och personnummer. Content-type-header sätts till JSON. Svaret (res) loggas och dess JSON-innehåll loggas också.
 
