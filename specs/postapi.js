@@ -7,10 +7,16 @@ import { URL } from './url.js';
 
 
 
-export const Options = {
-    vus:1,
-    duration: '1s'
-}
+export const options = {
+    discardResponseBodies: true,
+    scenarios: {
+      contacts: {
+        executor: 'constant-vus',
+        vus: 10,
+        duration: '30s',
+      },
+    },
+  };
 
 export default function(){
     const url='https://r7dk2.wiremockapi.cloud/arbetssokande';
