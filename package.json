@@ -1,0 +1,11 @@
+{
+  "name": "arbtestest",
+  "version": "1.0.0",
+  "description": "This is k6 test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anju Shahi",
+  "license": "ISC"
+}
